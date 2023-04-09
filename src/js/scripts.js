@@ -47,6 +47,7 @@ const material = new THREE.ShaderMaterial({
 });
 const mesh = new THREE.Mesh(geometry,material)
 scene.add(mesh);
+mesh.rotateZ(90)
 
 // Sets a 12 by 12 gird helper
 // const gridHelper = new THREE.GridHelper(12, 12);

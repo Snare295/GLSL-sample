@@ -559,6 +559,7 @@ const material = new _three.ShaderMaterial({
 });
 const mesh = new _three.Mesh(geometry, material);
 scene.add(mesh);
+mesh.rotateZ(90);
 // Sets a 12 by 12 gird helper
 // const gridHelper = new THREE.GridHelper(12, 12);
 // scene.add(gridHelper);
@@ -30870,7 +30871,7 @@ class MapControls extends OrbitControls {
 }
 
 },{"three":"ktPTu","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"l2SK8":[function(require,module,exports) {
-module.exports = "#define GLSLIFY 1\nuniform float u_time;\nvoid main (){\n    gl_Position = projectionMatrix * modelViewMatrix * vec4(position.x, position.y * sin(u_time), position.z + cos(u_time), 1.0) ;\n}";
+module.exports = "#define GLSLIFY 1\nuniform float u_time;\nvoid main (){\n    vec3 sinusoid = vec3(sin(u_time + position.y), sin(u_time + position.x), 0);\n    gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1) + vec4(sinusoid, 1);\n}";
 
 },{}],"3rbRS":[function(require,module,exports) {
 module.exports = "#define GLSLIFY 1\nuniform vec2 u_mouse;\nvoid main (){\n    gl_FragColor = vec4(0.1f, u_mouse.x, u_mouse.y, 1.0f);\n}   ";
