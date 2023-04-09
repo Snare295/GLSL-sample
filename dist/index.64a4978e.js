@@ -514,15 +514,20 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"goJYj":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _three = require("three");
 var _orbitControlsJs = require("three/examples/jsm/controls/OrbitControls.js");
+var _vertexGlsl = require("./vertex.glsl");
+var _vertexGlslDefault = parcelHelpers.interopDefault(_vertexGlsl);
+var _fragmentGlsl = require("./fragment.glsl");
+var _fragmentGlslDefault = parcelHelpers.interopDefault(_fragmentGlsl);
 const renderer = new _three.WebGLRenderer({
     antialias: true
 });
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 // Sets the color of the background
-renderer.setClearColor(16711422);
+renderer.setClearColor(2105376);
 const scene = new _three.Scene();
 const camera = new _three.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
 // Sets orbit control to move the camera around
@@ -530,12 +535,20 @@ const orbit = new _orbitControlsJs.OrbitControls(camera, renderer.domElement);
 // Camera positioning
 camera.position.set(6, 8, 14);
 orbit.update();
+const geometry = new _three.PlaneGeometry(10, 10, 30, 30);
+const material = new _three.ShaderMaterial({
+    vertexShader: _vertexGlslDefault.default,
+    fragmentShader: _fragmentGlslDefault.default,
+    wireframe: true
+});
+const mesh = new _three.Mesh(geometry, material);
+scene.add(mesh);
 // Sets a 12 by 12 gird helper
-const gridHelper = new _three.GridHelper(12, 12);
-scene.add(gridHelper);
-// Sets the x, y, and z axes with each having a length of 4
-const axesHelper = new _three.AxesHelper(4);
-scene.add(axesHelper);
+// const gridHelper = new THREE.GridHelper(12, 12);
+// scene.add(gridHelper);
+// // Sets the x, y, and z axes with each having a length of 4
+// const axesHelper = new THREE.AxesHelper(4);
+// scene.add(axesHelper);
 function animate() {
     renderer.render(scene, camera);
 }
@@ -546,7 +559,7 @@ window.addEventListener('resize', function() {
     renderer.setSize(window.innerWidth, window.innerHeight);
 });
 
-},{"three":"ktPTu","three/examples/jsm/controls/OrbitControls.js":"7mqRv"}],"ktPTu":[function(require,module,exports) {
+},{"three":"ktPTu","three/examples/jsm/controls/OrbitControls.js":"7mqRv","./vertex.glsl":"l2SK8","./fragment.glsl":"3rbRS","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"ktPTu":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "ACESFilmicToneMapping", ()=>ACESFilmicToneMapping
@@ -30839,6 +30852,12 @@ class MapControls extends OrbitControls {
     }
 }
 
-},{"three":"ktPTu","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["9mE3T","goJYj"], "goJYj", "parcelRequire6fcf")
+},{"three":"ktPTu","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"l2SK8":[function(require,module,exports) {
+module.exports = "#define GLSLIFY 1\nvoid main (){\n    gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);\n}";
+
+},{}],"3rbRS":[function(require,module,exports) {
+module.exports = "#define GLSLIFY 1\nvoid main (){\n    gl_FragColor = vec4(0.98f, 0.12f, 0.12f, 1.0f);\n}   ";
+
+},{}]},["9mE3T","goJYj"], "goJYj", "parcelRequire6fcf")
 
 //# sourceMappingURL=index.64a4978e.js.map

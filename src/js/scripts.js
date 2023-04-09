@@ -1,12 +1,15 @@
 import * as THREE from 'three';
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls.js';
 
+import vertexShader from './vertex.glsl'
+import fragmentShader from './fragment.glsl'
+
 const renderer = new THREE.WebGLRenderer({antialias: true});
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
 // Sets the color of the background
-renderer.setClearColor(0xFEFEFE);
+renderer.setClearColor(0x202020);
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(
@@ -23,13 +26,22 @@ const orbit = new OrbitControls(camera, renderer.domElement);
 camera.position.set(6, 8, 14);
 orbit.update();
 
-// Sets a 12 by 12 gird helper
-const gridHelper = new THREE.GridHelper(12, 12);
-scene.add(gridHelper);
+const geometry = new THREE.PlaneGeometry(10,10, 30, 30);
+const material = new THREE.ShaderMaterial({
+    vertexShader: vertexShader,
+    fragmentShader: fragmentShader,
+    wireframe: true
+});
+const mesh = new THREE.Mesh(geometry,material)
+scene.add(mesh);
 
-// Sets the x, y, and z axes with each having a length of 4
-const axesHelper = new THREE.AxesHelper(4);
-scene.add(axesHelper);
+// Sets a 12 by 12 gird helper
+// const gridHelper = new THREE.GridHelper(12, 12);
+// scene.add(gridHelper);
+
+// // Sets the x, y, and z axes with each having a length of 4
+// const axesHelper = new THREE.AxesHelper(4);
+// scene.add(axesHelper);
 
 function animate() {
     renderer.render(scene, camera);
