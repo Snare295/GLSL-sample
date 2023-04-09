@@ -22,7 +22,7 @@
 41D:\VScode\GLSL-sample\node_modules\rollup133255091947431699 1
 97D:\VScode\GLSL-sample\node_modules\glsl-resolve\node_modules\resolve\test\resolver\other_path\lib133255091868448785 1
 39D:\VScode\GLSL-sample\package-lock.json133255090094348379 0
-26D:\VScode\GLSL-sample\dist133255096441936154 1
+26D:\VScode\GLSL-sample\dist133255159489300520 1
 67D:\VScode\GLSL-sample\node_modules\@parcel\resolver-default\LICENSE121436361000000000 0
 73D:\VScode\GLSL-sample\node_modules\three\examples\jsm\utils\SceneUtils.js121436361000000000 0
 72D:\VScode\GLSL-sample\node_modules\three\src\materials\ShadowMaterial.js121436361000000000 0
@@ -99,13 +99,13 @@
 63D:\VScode\GLSL-sample\node_modules\@parcel\types\lib\index.d.ts121436361000000000 0
 72D:\VScode\GLSL-sample\node_modules\three\src\geometries\TorusGeometry.js121436361000000000 0
 56D:\VScode\GLSL-sample\node_modules\three\src\extras\core133255091909604174 1
-34D:\VScode\GLSL-sample\node_modules133255091972853553 1
+34D:\VScode\GLSL-sample\node_modules133255137433126183 1
 57D:\VScode\GLSL-sample\node_modules\@parcel\source-map\src133255091857929742 1
 66D:\VScode\GLSL-sample\node_modules\type-fest\ts41\pascal-case.d.ts121436361000000000 0
 93D:\VScode\GLSL-sample\node_modules\three\src\renderers\shaders\ShaderChunk\uv2_vertex.glsl.js121436361000000000 0
 83D:\VScode\GLSL-sample\node_modules\three\src\animation\tracks\ColorKeyframeTrack.js121436361000000000 0
 91D:\VScode\GLSL-sample\node_modules\parcel\node_modules\@parcel\transformer-css\package.json133255091942177182 0
-31D:\VScode\GLSL-sample\README.md133255134603683366 0
+31D:\VScode\GLSL-sample\README.md133255139234204783 0
 71D:\VScode\GLSL-sample\node_modules\caniuse-lite\data\features\run-in.js121436361000000000 0
 76D:\VScode\GLSL-sample\node_modules\three\examples\jsm\postprocessing\Pass.js121436361000000000 0
 74D:\VScode\GLSL-sample\node_modules\three\src\renderers\webgl\WebGLState.js121436361000000000 0
@@ -125,7 +125,7 @@
 54D:\VScode\GLSL-sample\node_modules\type-fest\base.d.ts121436361000000000 0
 61D:\VScode\GLSL-sample\node_modules\tslib\modules\package.json121436361000000000 0
 71D:\VScode\GLSL-sample\node_modules\resolve\test\resolver\same_names\foo133255091857399282 1
-40D:\VScode\GLSL-sample\src\js\vertex.glsl133255090094373397 0
+40D:\VScode\GLSL-sample\src\js\vertex.glsl133255159487423900 0
 49D:\VScode\GLSL-sample\node_modules\is-core-module133255091949333334 1
 74D:\VScode\GLSL-sample\node_modules\type-fest\source\async-return-type.d.ts121436361000000000 0
 59D:\VScode\GLSL-sample\node_modules\terser\tools\domprops.js121436361000000000 0
@@ -154,7 +154,7 @@
 64D:\VScode\GLSL-sample\node_modules\lmdb\dependencies\lz4\lib\dll133255091851299043 1
 76D:\VScode\GLSL-sample\node_modules\three\src\renderers\webgl\WebGLProgram.js121436361000000000 0
 76D:\VScode\GLSL-sample\node_modules\three\examples\js\shaders\MirrorShader.js121436361000000000 0
-42D:\VScode\GLSL-sample\src\js\fragment.glsl133255090094368403 0
+42D:\VScode\GLSL-sample\src\js\fragment.glsl133255147021100104 0
 62D:\VScode\GLSL-sample\node_modules\@parcel\workers\src\threads133255091800950765 1
 75D:\VScode\GLSL-sample\node_modules\@swc\helpers\src\_to_consumable_array.js132902623550000000 0
 111D:\VScode\GLSL-sample\node_modules\parcel\node_modules\@swc\helpers\lib\_class_static_private_field_spec_set.js121436361000000000 0
@@ -173,7 +173,7 @@
 61D:\VScode\GLSL-sample\node_modules\vite-plugin-glsl\README.md121436361000000000 0
 61D:\VScode\GLSL-sample\node_modules\shallow-copy\test\array.js130191999350000000 0
 68D:\VScode\GLSL-sample\node_modules\three\src\core\BufferAttribute.js121436361000000000 0
-39D:\VScode\GLSL-sample\src\js\scripts.js133255090094373397 0
+39D:\VScode\GLSL-sample\src\js\scripts.js133255157430220067 0
 80D:\VScode\GLSL-sample\node_modules\three\examples\jsm\nodes\gpgpu\ComputeNode.js121436361000000000 0
 119D:\VScode\GLSL-sample\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\package-module-fallback\main.js121436361000000000 0
 39D:\VScode\GLSL-sample\node_modules\.bin133255091953196652 1
@@ -202,14 +202,14 @@
 42D:\VScode\GLSL-sample\node_modules\@choojs133255091934580647 1
 82D:\VScode\GLSL-sample\node_modules\parcel\node_modules\@parcel\transformer-svg\src133255091774788257 1
 84D:\VScode\GLSL-sample\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mtest4.c121436361000000000 0
-43D:\VScode\GLSL-sample\node_modules\@esbuild133255091973028706 1
+43D:\VScode\GLSL-sample\node_modules\@esbuild133255137435603309 1
 83D:\VScode\GLSL-sample\node_modules\@parcel\graph\node_modules\@parcel\codeframe\src133255091822229053 1
 66D:\VScode\GLSL-sample\node_modules\@jridgewell\resolve-uri\LICENSE121436361000000000 0
 59D:\VScode\GLSL-sample\node_modules\rollup\dist\es\rollup.js121436361000000000 0
 67D:\VScode\GLSL-sample\node_modules\@parcel\optimizer-terser\LICENSE121436361000000000 0
 84D:\VScode\GLSL-sample\node_modules\parcel\node_modules\@swc\helpers\lib\_to_array.js121436361000000000 0
 61D:\VScode\GLSL-sample\node_modules\three\examples\jsm\objects133255091915619349 1
-42D:\VScode\GLSL-sample\node_modules\@parcel133255091972848547 1
+42D:\VScode\GLSL-sample\node_modules\@parcel133255137433121175 1
 73D:\VScode\GLSL-sample\node_modules\term-size\vendor\windows\term-size.exe121436361000000000 0
 46D:\VScode\GLSL-sample\node_modules\@jridgewell133255091934960975 1
 77D:\VScode\GLSL-sample\node_modules\three\examples\js\loaders\lwo\IFFParser.js121436361000000000 0
@@ -222,7 +222,7 @@
 53D:\VScode\GLSL-sample\node_modules\utility-types\dist133255091805844961 1
 85D:\VScode\GLSL-sample\node_modules\three\examples\jsm\nodes\core\NodeFunctionInput.js121436361000000000 0
 76D:\VScode\GLSL-sample\node_modules\@parcel\utils\src\generateBuildMetrics.js121436361000000000 0
-40D:\VScode\GLSL-sample\node_modules\@lmdb133255091972848547 1
+40D:\VScode\GLSL-sample\node_modules\@lmdb133255137433121175 1
 71D:\VScode\GLSL-sample\node_modules\resolve\test\resolver\dot_slash_main133255091870080188 1
 100D:\VScode\GLSL-sample\node_modules\parcel\node_modules\@parcel\runtime-browser-hmr\src\HMRRuntime.js121436361000000000 0
 50D:\VScode\GLSL-sample\node_modules\readable-stream133255091947201498 1
@@ -1254,7 +1254,7 @@
 60D:\VScode\GLSL-sample\node_modules\three\src\math\Matrix3.js121436361000000000 0
 104D:\VScode\GLSL-sample\node_modules\three\src\renderers\shaders\ShaderChunk\normal_fragment_begin.glsl.js121436361000000000 0
 91D:\VScode\GLSL-sample\node_modules\parcel\node_modules\@parcel\config-default\test\.babelrc121436361000000000 0
-43D:\VScode\GLSL-sample\node_modules\vite\bin133255091770489563 1
+43D:\VScode\GLSL-sample\node_modules\vite\bin133255091791677789 1
 83D:\VScode\GLSL-sample\node_modules\parcel\node_modules\@parcel\workers\lib\Trace.js121436361000000000 0
 98D:\VScode\GLSL-sample\node_modules\parcel\node_modules\@parcel\workers\src\threads\ThreadsChild.js121436361000000000 0
 64D:\VScode\GLSL-sample\node_modules\abortcontroller-polyfill\dist133255091859531118 1
@@ -4650,7 +4650,7 @@
 99D:\VScode\GLSL-sample\node_modules\parcel\node_modules\@swc\helpers\lib\_class_private_field_get.js121436361000000000 0
 92D:\VScode\GLSL-sample\node_modules\parcel\node_modules\@swc\helpers\lib\_class_call_check.js121436361000000000 0
 66D:\VScode\GLSL-sample\node_modules\@parcel\utils\test\input\config133255091822194014 1
-48D:\VScode\GLSL-sample\dist\index.64a4978e.js.map133255096441730980 0
+48D:\VScode\GLSL-sample\dist\index.64a4978e.js.map133255159489290500 0
 109D:\VScode\GLSL-sample\node_modules\parcel\node_modules\@swc\helpers\lib\_class_check_private_static_access.js121436361000000000 0
 100D:\VScode\GLSL-sample\node_modules\parcel\node_modules\@parcel\runtime-js\src\helpers\.eslintrc.json121436361000000000 0
 106D:\VScode\GLSL-sample\node_modules\parcel\node_modules\@swc\helpers\lib\_class_extract_field_descriptor.js121436361000000000 0
@@ -6764,7 +6764,7 @@
 66D:\VScode\GLSL-sample\node_modules\caniuse-lite\data\regions\TW.js121436361000000000 0
 114D:\VScode\GLSL-sample\node_modules\@parcel\reporter-cli\node_modules\@parcel\fs-search\fs-search.darwin-arm64.node121436361000000000 0
 66D:\VScode\GLSL-sample\node_modules\caniuse-lite\data\regions\TZ.js121436361000000000 0
-44D:\VScode\GLSL-sample\dist\index.64a4978e.js133255096441655914 0
+44D:\VScode\GLSL-sample\dist\index.64a4978e.js133255159489230447 0
 66D:\VScode\GLSL-sample\node_modules\caniuse-lite\data\regions\UG.js121436361000000000 0
 66D:\VScode\GLSL-sample\node_modules\caniuse-lite\data\regions\UY.js121436361000000000 0
 100D:\VScode\GLSL-sample\node_modules\@parcel\reporter-cli\node_modules\@parcel\utils\src\objectHash.js121436361000000000 0
@@ -8706,4 +8706,4 @@
 48D:\VScode\GLSL-sample\node_modules\.bin\vite.cmd133255091953201658 0
 48D:\VScode\GLSL-sample\node_modules\.bin\vite.ps1133255091953201658 0
 33D:\VScode\GLSL-sample\dist\assets133255096441936154 1
-37D:\VScode\GLSL-sample\dist\index.html133255096440945303 0
+37D:\VScode\GLSL-sample\dist\index.html133255151595233038 0

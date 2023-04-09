@@ -528,6 +528,21 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 // Sets the color of the background
 renderer.setClearColor(2105376);
+const uniforms = {
+    u_time: {
+        type: 'f',
+        value: 0
+    },
+    u_mouse: {
+        type: 'v2',
+        value: new _three.Vector2(0, 0)
+    }
+};
+const clock = new _three.Clock();
+window.addEventListener('mousemove', function(e) {
+    uniforms.u_mouse.value.set(e.screenX / window.innerWidth, e.screenY / window.innerHeight);
+    console.log('x and y:', uniforms.u_mouse.value);
+});
 const scene = new _three.Scene();
 const camera = new _three.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
 // Sets orbit control to move the camera around
@@ -539,7 +554,8 @@ const geometry = new _three.PlaneGeometry(10, 10, 30, 30);
 const material = new _three.ShaderMaterial({
     vertexShader: _vertexGlslDefault.default,
     fragmentShader: _fragmentGlslDefault.default,
-    wireframe: true
+    wireframe: true,
+    uniforms
 });
 const mesh = new _three.Mesh(geometry, material);
 scene.add(mesh);
@@ -550,6 +566,7 @@ scene.add(mesh);
 // const axesHelper = new THREE.AxesHelper(4);
 // scene.add(axesHelper);
 function animate() {
+    uniforms.u_time.value = clock.getElapsedTime();
     renderer.render(scene, camera);
 }
 renderer.setAnimationLoop(animate);
@@ -30853,10 +30870,10 @@ class MapControls extends OrbitControls {
 }
 
 },{"three":"ktPTu","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"l2SK8":[function(require,module,exports) {
-module.exports = "#define GLSLIFY 1\nvoid main (){\n    gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);\n}";
+module.exports = "#define GLSLIFY 1\nuniform float u_time;\nvoid main (){\n    gl_Position = projectionMatrix * modelViewMatrix * vec4(position.x, position.y * sin(u_time), position.z + cos(u_time), 1.0) ;\n}";
 
 },{}],"3rbRS":[function(require,module,exports) {
-module.exports = "#define GLSLIFY 1\nvoid main (){\n    gl_FragColor = vec4(0.98f, 0.12f, 0.12f, 1.0f);\n}   ";
+module.exports = "#define GLSLIFY 1\nuniform vec2 u_mouse;\nvoid main (){\n    gl_FragColor = vec4(0.1f, u_mouse.x, u_mouse.y, 1.0f);\n}   ";
 
 },{}]},["9mE3T","goJYj"], "goJYj", "parcelRequire6fcf")
 

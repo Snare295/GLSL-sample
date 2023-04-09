@@ -11,6 +11,18 @@ document.body.appendChild(renderer.domElement);
 // Sets the color of the background
 renderer.setClearColor(0x202020);
 
+const uniforms = {
+    u_time: {type: 'f', value: 0.0},
+    u_mouse: {type: 'v2', value: new THREE.Vector2(0.0, 0.0)}
+}
+
+const clock = new THREE.Clock();
+
+window.addEventListener('mousemove', function(e) {
+    uniforms.u_mouse.value.set(e.screenX / window.innerWidth, e.screenY / window.innerHeight);
+    console.log('x and y:', uniforms.u_mouse.value )
+})
+
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(
     45,
@@ -30,7 +42,8 @@ const geometry = new THREE.PlaneGeometry(10,10, 30, 30);
 const material = new THREE.ShaderMaterial({
     vertexShader: vertexShader,
     fragmentShader: fragmentShader,
-    wireframe: true
+    wireframe: true,
+    uniforms
 });
 const mesh = new THREE.Mesh(geometry,material)
 scene.add(mesh);
@@ -44,6 +57,7 @@ scene.add(mesh);
 // scene.add(axesHelper);
 
 function animate() {
+    uniforms.u_time.value = clock.getElapsedTime();
     renderer.render(scene, camera);
 }
 
